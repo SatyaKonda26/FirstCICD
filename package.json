@@ -1,4 +1,15 @@
 {
+  "name": "chatbot",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build"
+  },
   "dependencies": {
     "eslint": "8.37.0",
     "eslint-config-next": "13.2.4",
@@ -7,8 +18,5 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.8.0",
     "react-lottie-player": "^1.5.4"
-  },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
   }
 }
